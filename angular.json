@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kudigo-chop-better": {
+    "chop-betta-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "kudigo-chop-better:build:production"
+              "browserTarget": "chop-betta-app:build:production"
             },
             "development": {
-              "browserTarget": "kudigo-chop-better:build:development"
+              "browserTarget": "chop-betta-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kudigo-chop-better:build"
+            "browserTarget": "chop-betta-app:build"
           }
         },
         "test": {
@@ -109,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "kudigo-chop-better"
+  "defaultProject": "chop-betta-app"
 }
