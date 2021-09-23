@@ -1,0 +1,332 @@
+<!--Header-->
+<app-top-bar></app-top-bar>
+<div class="top-food-list">
+  <div class="cf">
+    <div routerLink='/food-menu-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts/cuisines/postmates/pizza.png" alt="Food">
+    </div>
+    <p>Pizza</p>
+  </div>
+  <div class="cf">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts_postmates/grocery.png" alt="Food">
+    </div>
+    <p>Grocery</p>
+  </div>
+  <div class="cf">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts/cuisines/postmates/fastfood.png" alt="Food">
+    </div>
+    <p>Fast Foods</p>
+  </div>
+  <div class="cf">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts_postmates/alcohol.png" alt="Food">
+    </div>
+    <p>Alcohol</p>
+  </div>
+  <div class="cf sm-hide2">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts_postmates/specialty_foods.png" alt="Food">
+    </div>
+    <p>Special Food</p>
+  </div>
+  <div class="cf sm-hide2">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts_postmates/specialty_foods.png" alt="Food">
+    </div>
+    <p>Hot Food</p>
+  </div>
+  <div class="cf sm-hide">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts/cuisines/postmates/pizza.png" alt="Food">
+    </div>
+    <p>Pizza</p>
+  </div>
+  <div class="cf sm-hide">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts_postmates/pet_supplies.png" alt="Food">
+    </div>
+    <p>Pet Food</p>
+  </div>
+  <div class="cf sm-hide">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts_postmates/retail.png" alt="Food">
+    </div>
+    <p>Hot Coffee</p>
+  </div>
+  <div class="cf sm-hide">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5b-5yMj61BVFR2d26rIIsbDHIoIWpWrjyw&usqp=CAU"
+        alt="Food">
+    </div>
+    <p>Light Pizza</p>
+  </div>
+  <div class="cf sm-hide">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts/cuisines/postmates/pizza.png" alt="Food">
+    </div>
+    <p>Pizza</p>
+  </div>
+  <div class="cf sm-hide">
+    <div routerLink='/restaurants-list' class="food-item-div">
+      <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts/cuisines/postmates/pizza.png" alt="Food">
+    </div>
+    <p>Pizza</p>
+  </div>
+</div>
+<div class="hr"></div>
+<div class="search-div2">
+
+  <input class="input3" type="text" placeholder="What are you craving for?">
+  <button class="search-btn"><i class="bi bi-search"></i></button>
+</div>
+<div class="main-section" id="restaurants">
+  <aside class="side-menu">
+    <div class="sort-category">
+      <div class="sort-div">
+        <h1 class="sorted-num"> 27 Stores </h1>
+      </div>
+      <div class="clear-results-div">
+        <a href="food-menu-list">clear all</a>
+      </div>
+      <div class="sort-category">
+        <div>
+          <label id="example-radio-group-label">Sort</label>
+          <mat-radio-group aria-labelledby="radio-group-label" class="radio-group">
+            <mat-radio-button class="radio-button" *ngFor="let selected of sortLists" [value]="selected">
+              {{selected}}
+            </mat-radio-button>
+          </mat-radio-group>
+
+
+        </div>
+        <div>
+          <h3> Price Range</h3>
+          <input type="range" min="0" max="1000">
+        </div>
+
+
+        <div>
+          <h3>Dietary</h3>
+          <div class="dietary">
+            <span class="type"> Vegeterian</span>
+            <span class="type">Vegan</span>
+            <span class="type">Halal</span>
+            <span class="type">Glutein-free</span>
+            <span class="type">Allergy Friendly </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main2">
+
+      <div class="category-header">
+        <h1>Category Title </h1>
+      </div>
+      <div class="roww cat-section">
+        <div class="coll food-cat" routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="category-header">
+        <h1>Category Title </h1>
+      </div>
+      <div class="roww cat-section">
+        <div class="coll food-cat" routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="category-header">
+        <h1>Category Title </h1>
+      </div>
+      <div class="roww cat-section">
+        <div class="coll food-cat" routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+
+        </div>
+
+      </div>
+      <div class="category-header">
+        <h1>Category Title </h1>
+      </div>
+      <div class="roww cat-section">
+        <div class="coll food-cat" routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+
+        </div>
+
+      </div>
+      <div class="category-header">
+        <h1>Category Title </h1>
+      </div>
+      <div class="roww cat-section">
+        <div class="coll food-cat" routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+        </div>
+        <div class="coll food-cat"  routerLink='/food-menu-list'>
+
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThT5OWFNXRpiK4-eRdw3lJUy8kUDFgBJwO4aPRBW0Ne7cf-0FAAnPD3WIXFuJdMimEGR4&usqp=CAU"
+                alt="">
+              <h3>Sainsbury's Mornington Crescent Local</h3>
+            </div>
+
+        </div>
+
+      </div>
+  </main>
+</div>
+
+
+<!--Footer-->

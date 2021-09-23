@@ -1,0 +1,45 @@
+
+<div class="cart-main-container">
+<div mat-dialog-actions class="mat-close-div">
+  <button mat-button mat-dialog-close>Close</button>
+</div>
+
+  <h1 mat-dialog-title>My Cart</h1>
+
+  <div mat-dialog-content class="cart-content" *ngIf="cartList.length">
+    <mat-card class="cart-item-card">
+      <img matCardImage
+        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9kODhmZWE3Ny1iZTExLTQwMWEtOGJkNS00ZDZiMTRmMzlhMTguanBlZw==">
+      <mat-card-content>
+        <p>Food name</p>
+        <p>Ghc 20.00</p>
+        <div>
+          Qty:
+          <input MatInPut type="number" min="0">
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="start">
+        <button mat-button>Edit</button>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card class="cart-item-card">
+      <img matCardImage
+        src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9kODhmZWE3Ny1iZTExLTQwMWEtOGJkNS00ZDZiMTRmMzlhMTguanBlZw==">
+      <mat-card-content>
+        <p>Food name</p>
+        <p>Ghc 20.00</p>
+        <div>
+          Qty:
+          <input MatInPut type="number" min="0">
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="start">
+        <button mat-button>Edit</button>
+
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div *ngIf="cartList.length" mat-dialog-actions class="checkout-div">
+    <button mat-button mat-dialog-submit>Checkout</button>
+  </div>
+</div>

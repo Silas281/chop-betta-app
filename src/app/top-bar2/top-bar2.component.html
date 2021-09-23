@@ -1,0 +1,39 @@
+<header>
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+          <div class="navbar-right">
+            <button class="sign-in" type="button">Sign In</button>
+          </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav class="nav flex-column">
+            <a class="nav-link" href="#">Active</a>
+            <a class="nav-link" href="#">Create Business Account</a>
+            <a class="nav-link" href="#">Add Your restaurant</a>
+            <a class="nav-link" href="#">Sign Up to Deliver</a>
+          </nav>
+        </div>
+      </div>
+      <button class="btn light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="">
+        <h1 routerLink='/' class="brand-logo">KudiGo Chop Better</h1>
+      </div>
+    </div>
+    <div class="search-div">
+
+        <input class="input2" type="text" placeholder="What are you craving for?">
+        <button class="search-btn"><i class="bi bi-search"></i></button>
+    </div>
+    <div class="navbar-right">
+      <button class="cart" type="button" (click)="openDialog()"><i class="bi bi-cart me-3"></i>0</button>
+    </div>
+  </div>
+</header>
+
